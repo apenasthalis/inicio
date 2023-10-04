@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: black;
+    }
+    div#area{
+        font: normal 13pt arial ;
+        background: rgb(3, 3, 109);
+        color: white;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="sair()" >
+quer ver algo engraçado?
+
+    </div>
+    <script>
+        function clicar() {
+         let a = document.getElementById("area")
+             a.innerText = 'bora bill'
+             a.style.background = 'red'
+        }
+        function entrou() {
+            let b = document.getElementById('area')
+                b.innerText = 'oie'
+                b.style.background = 'purple'
+        }
+        function sair() {
+            let c = document.getElementById('area')
+                c.innerText = 'tchau'
+                c.style.background = 'brown'
+        }
+    </script>
+</body>
+</html>

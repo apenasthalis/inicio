@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrm</title>
+
+    <style>
+        .quebra{
+            display: block;
+        }
+        .spaco{
+            margin-bottom: 7px;
+            
+        }
+        .spacot {
+            margin-top: 7px;
+        }
+        form{
+            border: 1px solid white;
+            padding: 40px;
+            border-radius: 80px;
+            background-color: gray;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <form name="form"  action="#" method="get">
+        <label> Nome: </label>
+        <input class="quebra spaco" type="text" name="caixa" id="caixa" maxlength="15" size="25">
+            <label> Senha:</label>
+            <input class="quebra spaco" type="password" maxlength="4" size="10">
+            <label class="quebra spacot">Esportes favoritos:</label>
+            <input  type="checkbox" name="Esporte" value="futebol"> Futebol
+            <input type="checkbox" name="Esporte" value="basquete"> Basquete
+            <input type="checkbox" name="Esporte" value="comer"> Comer
+            <label class="quebra spacot">Possui carro?</label>
+            <input type="radio" name="carro" id="s"> Sim
+            <input type="radio" name="carro" id="n"> Não
+        
+            <input class="quebra" type="submit" name="mano" value="Guardar">
+            
+            
+    </form>
+</body>
+</html>
